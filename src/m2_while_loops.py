@@ -32,7 +32,7 @@ def count(number):
 count(7)
 
 ###############################################################################
-# TODO: 2. (5 pts)
+# DONE: 2. (5 pts)
 #
 #   For this _TODO_, write a function called adder() that will continually ask the use to enter a number (using user input) like so:
 #
@@ -55,18 +55,20 @@ count(7)
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
 def adder():
-    num = 0
-    i = input("Please Enter a Number: ")
-    while i == float:
+    sum = 0
+    while True:
         i = input("Please Enter a Number: ")
-        num += i 
-        print(num)
-        if i == 0:
-            break
+        if i.replace(".", "").replace("-", "").isnumeric():
+            sum += float(i)
+            if i == "0":
+                break
+        else:
+            print("Invalid Input! Please enter a valid number: ")
+    print(f"The sum is {sum}.")
 adder()
 
 ###############################################################################
-# TODO: 3. EXTRA CREDIT (3 pts)
+# DONE: 3. EXTRA CREDIT (3 pts)
 #
 #   DO NOT attempt this extra credit until you have completed m3!!!
 #   
