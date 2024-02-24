@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (3 pts)
+# DONE: 1. (3 pts)
 #
 #   For this _TODO_, write function called count() that takes one parameter:
 #       number  <-- int
@@ -24,6 +24,12 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def count(number):
+    i = 1
+    while i <= number:
+        print(i)
+        i += 1
+count(7)
 
 ###############################################################################
 # TODO: 2. (5 pts)
@@ -48,6 +54,16 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def adder():
+    num = 0
+    i = input("Please Enter a Number: ")
+    while i == float:
+        i = input("Please Enter a Number: ")
+        num += i 
+        print(num)
+        if i == 0:
+            break
+adder()
 
 ###############################################################################
 # TODO: 3. EXTRA CREDIT (3 pts)

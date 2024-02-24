@@ -8,7 +8,10 @@
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
 nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
+count = 0 
+for num in nums:
+    count += nums
+print(count)
 
 ###############################################################################
 # TODO: 2. (3 pts)
