@@ -53,12 +53,13 @@ count(7)
 #   Also, make sure to call your function to start things off.
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
-###############################################################################
+############################################################################### 
 def adder():
     sum = 0
     while True:
         i = input("Please Enter a Number: ")
         if i.replace(".", "").replace("-", "").isnumeric():
+            # https://pythonhow.com/how/check-if-a-string-is-a-float/
             sum += float(i)
             if i == "0":
                 break
